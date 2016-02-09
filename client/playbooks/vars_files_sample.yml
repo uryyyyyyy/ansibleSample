@@ -1,0 +1,10 @@
+---
+- hosts: 192.168.33.12
+  vars_files:
+    - conf/conf.yml
+  sudo: yes
+  tasks:
+    - name: "echo item"
+      command: echo {{item}}
+    - name: install the latest version of ???
+      yum: name={{item}} state=latest

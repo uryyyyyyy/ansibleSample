@@ -1,0 +1,6 @@
+---
+- hosts: 192.168.33.12
+  vars_files:
+    - conf/template_conf.yml
+  tasks:
+    - template: src="./nginx.conf.j2" dest="./nginx.conf" owner=vagrant group=vagrant

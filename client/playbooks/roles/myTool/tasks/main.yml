@@ -1,0 +1,2 @@
+- name: copy
+  copy: src="./myStuff/{{ item }}" dest="/home/vagrant/"
